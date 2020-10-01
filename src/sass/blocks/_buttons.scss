@@ -1,0 +1,51 @@
+.buttons {
+    margin-top: 6rem;
+    a {
+        display: inline-block;
+        margin: 1.5rem 3rem;
+        padding: 1.4rem 0;
+        color: $main-color;
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 18rem;
+        border: 1px solid $main-color;
+        text-align: center;
+        border-radius: .6rem;
+        transition: .2s linear;
+        &:hover, &:nth-child(2) {
+            background-color: $main-color;
+            color: #fff;
+            
+        } 
+    }
+    &.works__buttons {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        left: 20px;
+        bottom: 20px;
+        margin: 0;
+        a {
+            display: block;
+            width: calc(50% - 25px);
+            border: 2px solid #f1f1f1;
+            margin: 0 1rem 0 0;
+            padding: 1rem;
+            font-size: 1.3rem;
+            background-color:  #48dafbcc;
+            color: #fff;
+            &:hover {
+                background-color:$main-color;
+                box-shadow: 0px 0px 5px #fff;
+            } 
+            &:nth-child(2) { 
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+
+
+

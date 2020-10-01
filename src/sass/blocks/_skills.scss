@@ -1,0 +1,25 @@
+.skills {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        width: 80px;
+        height: 80px;
+        box-shadow: 0 0 3px 3px #474760;
+        border: 2px solid #474760;
+        border-radius: 50%;
+        transition: .3s linear;
+        &:hover {
+            background:#474760;
+            color: #f1f1f1;
+        }
+        i {
+            font-size:6rem;
+        }
+    }
+}

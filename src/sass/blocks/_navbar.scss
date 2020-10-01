@@ -1,0 +1,68 @@
+.navbar {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 3rem 0;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 4.4rem;
+        height: 3.2rem;
+        background: url('../img/content/lv-logo.png') center center/contain no-repeat;
+    }
+    &__burger {
+        background: none;
+        width: 3rem;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        outline: none;
+        z-index: 999;
+        display: none;
+        span {
+            display: block;
+            height: .3rem;
+            background-color: #fff;
+            margin: .6rem 0;
+            position: relative;
+            transition: .3s linear;
+        }
+    }
+    &__item {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-left: 3rem;
+        transition: .2s linear;
+        &:hover{
+            color:$main-color;
+        }
+    }
+}
+.sticky {
+    background: linear-gradient(-45deg, #52648b,#474760,#52648b,#322A33);
+    background-size:  400% 400%;
+    animation: bgchange 10s ease-in-out infinite;
+    padding: 1.8rem 0;
+    // .navbar__logo {
+    //     background-image: url('../img/content/white-logo.png');
+    // }
+    // .navbar__burger {
+    //     span {
+    //         background-color: #111;
+    //     }
+    // }
+    // .navbar__item {
+    //         color: #111;
+    //         &:hover{
+    //             color:$main-color;
+    //         }
+    //     }
+}
+

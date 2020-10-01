@@ -1,0 +1,36 @@
+.services {
+    padding: 10rem 0;
+    background-color: #474760;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: calc(33% - 20px);
+        text-align: center;
+        border: 1px solid $main-color;
+        border-radius: 6px;
+        margin: 2rem 0;
+        padding: 4rem 2rem;
+        color: #fff;
+        cursor: default;
+        transition: .3s linear;
+        i {
+            font-size: 4rem;
+            color: $main-color;
+            margin-bottom: 2rem;
+            transition: .3s linear;
+        }
+        h4 {
+            font-size: 1.6rem;
+            margin-bottom: .6rem;
+        }
+        &:hover {
+            background-color: $main-color;
+            i {
+                color: #f1f1f1;
+            }
+        }
+    }
+}

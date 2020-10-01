@@ -1,0 +1,52 @@
+.education {
+    padding: 10rem 0;
+    background-color: #474760;
+    &__timeline {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__block {
+        width: calc(50% - 20px);
+        background-color: #353b48;
+        color: #f1f1f1;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        margin: 1rem 0;
+        padding: 3rem;
+        position: relative;
+        cursor: default;
+        &:hover {
+            border: 2px solid $main-color; 
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 120%;
+            background-color: #ddd;
+            left: -2rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1.6rem;
+            height: 1.6rem;
+            background-color: $main-color;
+            left: -2.8rem;
+            top: 3rem;
+            border-radius: 50%;
+        }
+        h3 {
+            font-size: 1.6rem;
+            margin: 1rem 0; 
+        }
+        p {
+            font-size: 1.5rem;
+            color: #f1f1f1;
+        }
+    }
+    
+}
