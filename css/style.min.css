@@ -729,6 +729,12 @@ button {
 .project-box__icon--react {
   background: url("../img/svg/i-react.svg") center/cover no-repeat;
 }
+.project-box__icon--games {
+  background: url("../img/svg/i-games.svg") center/cover no-repeat;
+}
+.project-box__icon--scenes3d {
+  background: url("../img/svg/i-scenes3d.png") center/cover no-repeat;
+}
 .project-box__icon--markup {
   background: url("../img/svg/i-html.svg") center/cover no-repeat;
 }
@@ -798,6 +804,11 @@ button {
   }
   .project-box__name {
     margin: 0 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .project-box__menu {
+    flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 1024px) {
