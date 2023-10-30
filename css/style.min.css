@@ -783,6 +783,7 @@ button {
 .project-box__btn-box {
   display: flex;
   margin: auto -5px 0;
+  justify-content: center;
 }
 .project-box__btn {
   width: 100%;
