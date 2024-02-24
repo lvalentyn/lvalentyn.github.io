@@ -1,371 +1,324 @@
 <!DOCTYPE html>
-<html>
-
-<head lang="en">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="files/favicon.ico">
-  <title>LValentyn's Projects</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-  <div class="page">
-    <div class="section">
-      <div class="section__bg"></div>
-      <div class="container">
-        <h1 class="h1">Portfolio by <a href="https://www.linkedin.com/in/valentyn-lukashev-948a921b8/"
-            target="_blank">linkedin.com/valentyn-lukashev</a></h1>
-        <section class="project-box">
-          <div class="project-box__menu">
-            <p class="project-box__name all">All</p>
-            <p class="project-box__name html-btn">HTML/CSS</p>
-            <p class="project-box__name react-btn">React</p>
-            <p class="project-box__name games-btn">Games</p>
-            <p class="project-box__name scenes3d-btn">3D Scenes</p>
-          </div>
-          <div class="project-box__container">
-            <div class="project-box__card js-card markup">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">FMC - talent</div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.svg">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.min.css?_v=20240224165130">
+  </head>
+  <body>
+    <div class="page" id="home">
+      <main class="main">
+        <canvas id="canvas"></canvas>
+        <section class="hero panel">
+          <div class="container">
+            <div class="hero__wrapper">
+              <div class="hero__col">
+                <div class="hero__top">
+                  <div class="hero__card js-tilt"><span>Front-end Developer</span></div>
+                  <div class="hero__card js-tilt"><span>20+ </span>Completed Projects</div>
+                  <div class="hero__card js-tilt"><span>3+ </span>years Completed Projects</div>
                 </div>
-                <div class="project-box__img"><img src="img/fmc.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">EJS</li>
-                  <li class="project-box__el">PCSS</li>
-                  <li class="project-box__el">VanilaJS</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn btn--alt project-box__btn"
-                    href="https://www.fmctalent.com/" target="_blank">Live</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card markup">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Discovered-people</div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
+                <div class="hero__bottom">
+                  <div class="hero__card js-tilt"><span>My stack:</span>
+                    <div class="hero__marquee" id="marquee_skills">
+                      <div class="hero__skill"><img src="img/icons/i-html.svg" alt=""></div>
+                      <div class="hero__skill"><img src="img/icons/i-css.svg" alt=""></div>
+                      <div class="hero__skill"><img src="img/icons/i-js.svg" alt=""></div>
+                      <div class="hero__skill"><img src="img/icons/i-react.svg" alt=""></div>
+                      <div class="hero__skill"><img src="img/icons/i-gsap.svg" alt=""></div>
+                      <div class="hero__skill"><img src="img/icons/i-redux.svg" alt=""></div>
+                      <div class="hero__skill"><img src="img/icons/i-sass.svg" alt=""></div>
+                      <div class="hero__skill"><img src="img/icons/i-pug.svg" alt=""></div>
+                      <div class="hero__skill"><img src="img/icons/i-tailwind.svg" alt=""></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="project-box__img"><img src="img/discovered.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">EJS</li>
-                  <li class="project-box__el">PCSS</li>
-                  <li class="project-box__el">VanilaJS</li>
-                  <li class="project-box__el">Matter.js</li>
-                  <li class="project-box__el">GSAP</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn btn--alt project-box__btn"
-                    href="https://bolddev7.co.uk/discovered-people/" target="_blank">Demo</a></div>
-              </div>
-            </div>
-
-            <div class="project-box__card js-card scenes3d">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Building 3D</div>
-                  <div class="project-box__icon project-box__icon--scenes3d"></div>
-                </div>
-                <div class="project-box__img"><img src="img/build3d.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">PUG</li>
-                  <li class="project-box__el">SCSS</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn btn--alt project-box__btn"
-                    href="https://codepen.io/lvalentyn/pen/JjZNpOj" target="_blank">Codepen</a></div>
-              </div>
-            </div>
-
-            <div class="project-box__card js-card markup">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Dinitrol - Market</div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                </div>
-                <div class="project-box__img"><img src="img/dinitroldirect.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">EJS</li>
-                  <li class="project-box__el">PCSS</li>
-                  <li class="project-box__el">VanilaJS</li>
-                  <li class="project-box__el">Jquery</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn btn--alt project-box__btn"
-                    href="https://www.dinitroldirect.com/" target="_blank">Live</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card markup">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Play-landing</div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                </div>
-                <div class="project-box__img"><img src="img/play.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">PUG</li>
-                  <li class="project-box__el">SCSS</li>
-                  <li class="project-box__el">VanilaJS</li>
-                  <li class="project-box__el">Jquery</li>
-                  <li class="project-box__el">Mobile-first</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/play-landing" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://lvalentyn.github.io/play-landing/dist/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card markup">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Mango-landing</div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                </div>
-                <div class="project-box__img"><img src="img/mango.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">SCSS</li>
-                  <li class="project-box__el">Paroller</li>
-                  <li class="project-box__el">Custom Animations</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/mango" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://lvalentyn.github.io/mango/build/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card games">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Space Invaders</div>
-                  <div class="project-box__icon project-box__icon--games"></div>
-                </div>
-                <div class="project-box__img"><img src="img/spaceinvaders.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">VanilaJS</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/Games/tree/master/SpaceInvaders" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://lvalentyn.github.io/Games/SpaceInvaders/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card markup">
-              <div class="project-box__wrapper anim">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Loan-landing</div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                </div>
-                <div class="project-box__img"><img src="img/loan.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">PUG</li>
-                  <li class="project-box__el">SCSS</li>
-                  <li class="project-box__el">VanilaJS</li>
-                  <li class="project-box__el">Jquery</li>
-                  <li class="project-box__el">Mobile-first</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/loan-landing" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://lvalentyn.github.io/loan-landing/dist/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card games">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Breakout</div>
-                  <div class="project-box__icon project-box__icon--games"></div>
-                </div>
-                <div class="project-box__img"><img src="img/breakout.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">VanilaJS</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/Games/tree/master/Breakout" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://lvalentyn.github.io/Games/Breakout/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card scenes3d">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Cube and sphere</div>
-                  <div class="project-box__icon project-box__icon--scenes3d"></div>
-                </div>
-                <div class="project-box__img"><img src="img/cubensphere.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">PUG</li>
-                  <li class="project-box__el">SCSS</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/3d-css/tree/master/cubeAndSphere" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://lvalentyn.github.io/3d-css/cubeAndSphere/dist/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card scenes3d">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Cubes</div>
-                  <div class="project-box__icon project-box__icon--scenes3d"></div>
-                </div>
-                <div class="project-box__img"><img src="img/cubes.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">PUG</li>
-                  <li class="project-box__el">SCSS</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/3d-css/tree/master/cubes" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://lvalentyn.github.io/3d-css/cubes/dist/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card markup">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Termowood-landing</div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                </div>
-                <div class="project-box__img"><img src="img/termo.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">SCSS</li>
-                  <li class="project-box__el">Custom Animations</li>
-                  <li class="project-box__el">Mailer</li>
-                  <li class="project-box__el">Jquery</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/termowood" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://lvalentyn.github.io/termowood/build/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card markup">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Detroit-landing</div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                  <div class="project-box__icon project-box__icon--markup"></div>
-                </div>
-                <div class="project-box__img"><img src="img/detroit.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">SCSS</li>
-                  <li class="project-box__el">Custom Animations</li>
-                  <li class="project-box__el">Mailer</li>
-                  <li class="project-box__el">Jquery</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/detroitauto" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://lvalentyn.github.io/detroitauto/dist/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card react">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Travel-app</div>
-                  <div class="project-box__icon project-box__icon--react"></div>
-                </div>
-                <div class="project-box__img"><img src="img/travel.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">SCSS</li>
-                  <li class="project-box__el">React-router-dom</li>
-                  <li class="project-box__el">Framer-motion</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/travel-app" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://travel-space-app.netlify.app/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card react">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Restaurant-app</div>
-                  <div class="project-box__icon project-box__icon--react"></div>
-                </div>
-                <div class="project-box__img"><img src="img/restaurant.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">SCSS</li>
-                  <li class="project-box__el">Framer-motion</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/restaurant-landing-app" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://restaurant-landing-app.netlify.app/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card react">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Tesla-app</div>
-                  <div class="project-box__icon project-box__icon--react"></div>
-                </div>
-                <div class="project-box__img"><img src="img/tesla.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">Redux</li>
-                  <li class="project-box__el">Framer-motion</li>
-                  <li class="project-box__el">React-icons</li>
-                  <li class="project-box__el">Styled-components</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/tesla-app" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://tesla-1234-app.netlify.app/"
-                    target="_blank">Demo</a></div>
-              </div>
-            </div>
-            <div class="project-box__card js-card react">
-              <div class="project-box__wrapper">
-                <div class="project-box__title-box">
-                  <div class="project-box__title">Secured-app</div>
-                  <div class="project-box__icon project-box__icon--react"></div>
-                </div>
-                <div class="project-box__img"><img src="img/secured.jpg" alt="first-proj"></div>
-                <ul class="project-box__text-box">
-                  <li class="project-box__el">Addition to using:</li>
-                  <li class="project-box__el">React-router-dom</li>
-                  <li class="project-box__el">Framer-motion</li>
-                  <li class="project-box__el">React-icons</li>
-                </ul>
-                <div class="project-box__btn-box"><a class="btn project-box__btn"
-                    href="https://github.com/lvalentyn/secured-app" target="_blank">Code</a><a
-                    class="btn btn--alt project-box__btn" href="https://secured-432.netlify.app/"
-                    target="_blank">Demo</a></div>
+                <div class="hero__card hero__card--soc"><span>Contacts:</span><a class="hero__soc hero__soc--in" target="_blank" href="https://www.linkedin.com/in/valentyn-lukashev-948a921b8/"><span></span></a><a class="hero__soc hero__soc--mail" href="mailto:lvalentynpage@gmail.com"><span></span></a></div>
               </div>
             </div>
           </div>
         </section>
+        <section class="works panel" id="works">
+          <div class="container">
+            <div class="works__wrapper">
+              <div class="works__card-box">
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Discovered-people</div>
+                          <div class="works__img"><picture><source srcset="img/works/discovered.webp" type="image/webp"><img src="img/works/discovered.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">EJS</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                            <p class="works__tech">Matter.js</p>
+                            <p class="works__tech">GSAP</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://bolddev7.co.uk/discovered-people/" target="_blank">Demo</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Dinitrol - Market</div>
+                          <div class="works__img"><picture><source srcset="img/works/dinitroldirect.webp" type="image/webp"><img src="img/works/dinitroldirect.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">EJS</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                            <p class="works__tech">Jquery</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.dinitroldirect.com/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">CRP - group</div>
+                          <div class="works__img"><picture><source srcset="img/works/crp.webp" type="image/webp"><img src="img/works/crp.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                            <p class="works__tech">GSAP</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.crpgroupglobal.com/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Shortlist</div>
+                          <div class="works__img"><picture><source srcset="img/works/shortlist.webp" type="image/webp"><img src="img/works/shortlist.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.ontheshortlist.co.uk/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">FMC - talent</div>
+                          <div class="works__img"><picture><source srcset="img/works/fmc.webp" type="image/webp"><img src="img/works/fmc.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">EJS</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.fmctalent.com/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Marva</div>
+                          <div class="works__img"><picture><source srcset="img/works/marva.webp" type="image/webp"><img src="img/works/marva.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                            <p class="works__tech">Mixing sections</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.marva.co.uk/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Raven Medical</div>
+                          <div class="works__img"><picture><source srcset="img/works/raven.webp" type="image/webp"><img src="img/works/raven.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                            <p class="works__tech">Mixing sections</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.ravenmedical.co.uk/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Approach Personnel</div>
+                          <div class="works__img"><picture><source srcset="img/works/approach.webp" type="image/webp"><img src="img/works/approach.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.approachpersonnel.co.uk/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Kennedy &amp; Partners</div>
+                          <div class="works__img"><picture><source srcset="img/works/kennedy.webp" type="image/webp"><img src="img/works/kennedy.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.kennedyandpartners.ie/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Altum Group</div>
+                          <div class="works__img"><picture><source srcset="img/works/altum.webp" type="image/webp"><img src="img/works/altum.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.altum-group.com/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Mrk associates</div>
+                          <div class="works__img"><picture><source srcset="img/works/mrk.webp" type="image/webp"><img src="img/works/mrk.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                            <p class="works__tech">Parallax</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.mrkassociates.co.uk/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Elizabeth Michael</div>
+                          <div class="works__img"><picture><source srcset="img/works/elizabet.webp" type="image/webp"><img src="img/works/elizabet.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.elizabethmichael.co.uk/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Icare 24</div>
+                          <div class="works__img"><picture><source srcset="img/works/icare24.webp" type="image/webp"><img src="img/works/icare24.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                            <p class="works__tech">Mixing sections</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.icare24.co.uk/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Altum Consulting</div>
+                          <div class="works__img"><picture><source srcset="img/works/consulting.webp" type="image/webp"><img src="img/works/consulting.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PostHTML</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn btn--live works__btn" href="https://www.altumconsulting.co.uk/" target="_blank">Live</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="3d">
+                          <div class="works__name">Build</div>
+                          <div class="works__img"><picture><source srcset="img/works/build3d.webp" type="image/webp"><img src="img/works/build3d.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PUG</p>
+                            <p class="works__tech">SCSS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn works__btn" href="https://codepen.io/lvalentyn/pen/JjZNpOj" target="_blank">Codepen</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="3d">
+                          <div class="works__name">Cube and sphere</div>
+                          <div class="works__img"><picture><source srcset="img/works/cubensphere.webp" type="image/webp"><img src="img/works/cubensphere.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PUG</p>
+                            <p class="works__tech">SCSS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn works__btn" href="https://github.com/lvalentyn/3d-css/tree/master/cubeAndSphere" target="_blank">Code</a><a class="btn btn--live works__btn" href="https://lvalentyn.github.io/3d-css/cubeAndSphere/dist/" target="_blank">Demo</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="3d">
+                          <div class="works__name">Cubes</div>
+                          <div class="works__img"><picture><source srcset="img/works/cubes.webp" type="image/webp"><img src="img/works/cubes.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">PUG</p>
+                            <p class="works__tech">SCSS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn works__btn" href="https://github.com/lvalentyn/3d-css/tree/master/cubes" target="_blank">Code</a><a class="btn btn--live works__btn" href="https://lvalentyn.github.io/3d-css/cubes/dist/" target="_blank">Demo</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Termowood - landing</div>
+                          <div class="works__img"><picture><source srcset="img/works/termo.webp" type="image/webp"><img src="img/works/termo.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">SCSS</p>
+                            <p class="works__tech">Custom Animations</p>
+                            <p class="works__tech">Mailer</p>
+                            <p class="works__tech">Jquery</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn works__btn" href="https://github.com/lvalentyn/termowood" target="_blank">Code</a><a class="btn btn--live works__btn" href="https://lvalentyn.github.io/termowood/build/" target="_blank">Demo</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Mango - landing</div>
+                          <div class="works__img"><picture><source srcset="img/works/detroit.webp" type="image/webp"><img src="img/works/detroit.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">SCSS</p>
+                            <p class="works__tech">Custom Animations</p>
+                            <p class="works__tech">Mailer</p>
+                            <p class="works__tech">Jquery</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn works__btn" href="https://github.com/lvalentyn/detroitauto" target="_blank">Code</a><a class="btn btn--live works__btn" href="https://lvalentyn.github.io/detroitauto/dist/" target="_blank">Demo</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Play - landing</div>
+                          <div class="works__img"><picture><source srcset="img/works/play.webp" type="image/webp"><img src="img/works/play.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">EJS</p>
+                            <p class="works__tech">PCSS</p>
+                            <p class="works__tech">VanilaJS</p>
+                            <p class="works__tech">Jquery</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn works__btn" href="https://github.com/lvalentyn/play-landing" target="_blank">Code</a><a class="btn btn--live works__btn" href="https://lvalentyn.github.io/play-landing/dist/" target="_blank">Demo</a>
+                          </div>
+                        </div>
+                        <div class="works__card js-tilt" data-tag="html">
+                          <div class="works__name">Mango - landing</div>
+                          <div class="works__img"><picture><source srcset="img/works/mango.webp" type="image/webp"><img src="img/works/mango.jpg" alt=""></picture></div>
+                          <div class="works__descr"><span>Addition to using:</span>
+                            <p class="works__tech">Paroller</p>
+                            <p class="works__tech">SCSS</p>
+                          </div>
+                          <div class="works__btn-box"><a class="btn works__btn" href="https://github.com/lvalentyn/mango" target="_blank">Code</a><a class="btn btn--live works__btn" href="https://lvalentyn.github.io/mango/build/" target="_blank">Demo</a>
+                          </div>
+                        </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="popup js-modal">
+      <div class="popup__content">
+        <div class="popup__close"></div>
+        <div class="popup__wrapper js-slider-popup">
+          <div class="popup__top">
+            <div class="popup__img"><picture><source srcset="img/popup-photo.webp" type="image/webp"><img src="img/popup-photo.jpg" alt="team photo"></picture></div>
+            <ul class="popup__info">
+                  <li class="popup__row">
+                    <p class="popup__key">Name:</p>
+                    <p class="popup__descr">Tom Dou</p>
+                  </li>
+                  <li class="popup__row">
+                    <p class="popup__key">Position:</p>
+                    <p class="popup__descr">Front-End</p>
+                  </li>
+                  <li class="popup__row">
+                    <p class="popup__key">Phone:</p>
+                    <p class="popup__descr">+3125789075</p>
+                  </li>
+                  <li class="popup__row">
+                    <p class="popup__key">Email:</p>
+                    <p class="popup__descr">username@mail.com</p>
+                  </li>
+              <li class="popup__social-box"><a class="popup__soc--fb popup__soc" href="/" aria-label="fb link"></a><a class="popup__soc--inst popup__soc" href="/" aria-label="inst link"></a><a class="popup__soc--in popup__soc" href="/" aria-label="in link"></a><a class="popup__soc--tw popup__soc" href="/" aria-label="tw link"></a>
+              </li>
+            </ul>
+          </div>
+          <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="js/app.min.js"> </script>
-</body>
-
+    <script src="js/app.min.js?_v=20240224165130"> </script>
+  </body>
 </html>
